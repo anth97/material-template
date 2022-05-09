@@ -1,0 +1,25 @@
+<div style="padding-top: 5%;">
+    <mat-card>
+        <mat-card-title>
+            <mat-toolbar color="primary">
+                <button mat-button> <h1>Iniciar Sesión</h1></button>
+                <span class="spacer"></span>
+            </mat-toolbar>
+        </mat-card-title>
+        <mat-card-content>
+            <img mat-card-image src="https://t4.ftcdn.net/jpg/00/65/77/27/360_F_65772719_A1UV5kLi5nCEWI0BNLLiFaBPEkUbv5Fv.jpg">
+            <form>
+                <mat-form-field appearance="outline">
+                    <mat-label>Usuario</mat-label>
+                    <input matInput placeholder="Placeholder">
+                </mat-form-field>
+                <mat-form-field appearance="outline">
+                    <mat-label>Contraseña</mat-label>
+                    <input matInput placeholder="Placeholder">
+                </mat-form-field>
+            </form>
+            <button mat-raised-button color="primary" 
+            (click)="login()">Ingresar</button>
+        </mat-card-content>
+    </mat-card>
+</div>
