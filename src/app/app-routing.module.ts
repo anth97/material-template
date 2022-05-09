@@ -9,8 +9,8 @@ const routes: Routes = [
   },
   {
     path: 'pages',
-    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule),
-    canLoad: [AuthGuard]
+    loadChildren: () => import('./munipas/munipas.module').then(m => m.PagesModule),
+    //canLoad: [AuthGuard]
   },
   {
     path: '**',

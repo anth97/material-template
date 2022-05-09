@@ -14,10 +14,10 @@ export class LoginComponent {
 
   login() : void {
 
-    this.authService.login('admin', 'admin').subscribe(resp => {
+    //this.authService.login('admin', 'admin').subscribe(resp => {
       
-    })
-    //this.router.navigate(['./pages']);
+    //})
+    this.router.navigate(['./pages']);
   }
 
 

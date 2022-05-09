@@ -1,7 +1,9 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { HomeComponent } from "./home/home.component";
-import { ListComponent } from "./user/list/list.component";
+import { HomeComponent } from "./pages/home/home.component";
+import { CreateComponent } from "./pages/user/create/create.component";
+import { ListComponent } from "./pages/user/list/list.component";
+
 
 const routes: Routes = [
     {
@@ -9,6 +11,7 @@ const routes: Routes = [
         component: HomeComponent,
         children: [
             { path: 'user-list', component: ListComponent},
+            { path: 'user-create', component: CreateComponent},
             { path: '**', redirectTo: ''}
         ]
     },

@@ -1,5 +1,5 @@
 <mat-sidenav-container fullscreen>
-    <mat-sidenav #sidenav mode="side" opened>
+    <mat-sidenav #sidenav mode="side" [opened]="!media.isActive('lt-md')">
 
         <mat-toolbar color="primary">
             <span>Menú</span>
@@ -41,8 +41,7 @@
         <button mat-button>Logout</button>
     </mat-toolbar>
 
-    <div class="container">
+    <div class="container" fxFlex="grow">
         <router-outlet></router-outlet>
     </div>
-
-</mat-sidenav-container>
+</mat-sidenav-container> 
