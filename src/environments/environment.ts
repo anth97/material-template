@@ -5,6 +5,7 @@
 export const environment = {
   production: false,
   baseUrl: 'http://localhost:3000',
+  menuUrl: 'http://localhost:4200'
 };
 
 /*
